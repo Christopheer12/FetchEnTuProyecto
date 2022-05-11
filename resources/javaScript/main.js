@@ -6,6 +6,9 @@ const UVA = 18 / 100;
 const Especial = 36 / 100;
 const IUDU = 50 / 100;
 const Santander = 55.5 / 100;
+setTimeout(()=>{
+  console.log("hola curioso, ¿estas perdido, o eres programador?")
+},5000)
 
 function bancos() {
     let dinero = parseInt(document.getElementById("dinero_a_prestar").value);
