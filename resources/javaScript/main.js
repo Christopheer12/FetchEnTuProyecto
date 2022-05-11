@@ -1,5 +1,6 @@
 /*  utilizar fetch para cargar daros en tu aplicacionde forma asincronica, puedes consumir una api que ofrezca recursos relevantes para tu app
 crear un archivp .JSON y cargar los datos de tu app isando fetch y una ruta relativa
+40:00
 */
 
 const UVA = 18 / 100;
