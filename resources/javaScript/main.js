@@ -3,6 +3,7 @@ crear un archivp .JSON y cargar los datos de tu app isando fetch y una ruta rela
 40:00
 */
 
+
 const UVA = 18 / 100;
 const Especial = 36 / 100;
 const IUDU = 50 / 100;
