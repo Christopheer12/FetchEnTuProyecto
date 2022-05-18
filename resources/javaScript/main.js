@@ -1,8 +1,4 @@
-/*  utilizar fetch para cargar daros en tu aplicacionde forma asincronica, puedes consumir una api que ofrezca recursos relevantes para tu app
-crear un archivp .JSON y cargar los datos de tu app isando fetch y una ruta relativa
-*/
-
-
+/* declarando constantes base */
 const UVA = 18 / 100;
 const Especial = 36 / 100;
 const IUDU = 50 / 100;
@@ -10,11 +6,12 @@ const Santander = 55.5 / 100;
 setTimeout(()=>{
   console.log("hola curioso, ¿estas perdido, o eres programador?")
 },5000)
-
+/* recolecion de datos*/
 function bancos() {
     let dinero = parseInt(document.getElementById("dinero_a_prestar").value);
     let cuotas = parseInt(document.getElementById("cantidad_de_cuotas").value);
     let bancosSeleccion = document.getElementById("bancosSeleccion").value;
+    /* tipo de operaciones */
     switch (bancosSeleccion) {
         case "UVA":
             let cuotasMenualesUva = dinero / cuotas;
@@ -45,7 +42,7 @@ function bancos() {
 
     }
 
-
+/* almacenamiento en storage */
     localStorage.setItem("dinero_solicitado", dinero);
     localStorage.setItem("cantidad_de_coutas", cuotas);
     localStorage.setItem("banco_seleccionado", bancosSeleccion);
@@ -54,7 +51,7 @@ function bancos() {
     console.log(localStorage.getItem("banco_seleccionado"));
 }
 
-
+/* recolecion de datos del interesado */
 function datos() {
     let nombreCompleto = document.getElementById("nombreCompleto").value;
     let apellidoCompleto = document.getElementById("apellidoCompleto").value;
@@ -76,6 +73,7 @@ function datos() {
           swal("Poof! gallina, cancelaste la operacion");
         }
       });
+      /* almacenamiento de datos interesado */
     localStorage.setItem("nombre Completo", nombreCompleto);
     localStorage.setItem("apellido Completos", apellidoCompleto);
     localStorage.setItem("numero Telefonico", numeroTelefonico);
